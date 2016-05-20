@@ -1,0 +1,501 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		3;
+	dw-num-cols-tablet:		6;
+	dw-num-cols-desktop:	9;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 84.9333%;
+	padding-left: 3.0333%;
+	padding-right: 3.0333%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Navbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#imageslider {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Content1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Content2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#content2 {
+	clear: none;
+	float: left;
+	margin-left: 7.1428%;
+	width: 100%;
+	display: block;
+}
+#Content3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#SecondDiv {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#box1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#box2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#box3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#bottom_div {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#bottomDiv {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#bottomleft {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#bottomRight {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#footer1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 28.5714%;
+	display: block;
+}
+#footer2 {
+	clear: none;
+	float: left;
+	margin-left: 42.8571%;
+	width: 28.5714%;
+	display: block;
+}
+#footer3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#legal {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Slogan {
+	clear: none;
+	float: left;
+	margin-left: 7.1428%;
+	width: 100%;
+	display: block;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 89.9%;
+	padding-left: 1.55%;
+	padding-right: 1.55%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Logo {
+	clear: none;
+	float: left;
+	margin-left: 3.4482%;
+	width: 100%;
+	display: block;
+}
+#Navbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#imageslider {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Content1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Content2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#content2 {
+	clear: none;
+	float: left;
+	margin-left: 3.4482%;
+	width: 100%;
+	display: block;
+}
+#Content3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#SecondDiv {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#box1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#box2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#box3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#bottom_div {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#bottomDiv {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#bottomleft {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 48.2758%;
+	display: block;
+}
+#bottomRight {
+	clear: none;
+	float: left;
+	margin-left: 3.4482%;
+	width: 48.2758%;
+	display: block;
+}
+#footer1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 13.7931%;
+	display: block;
+}
+#footer2 {
+	clear: none;
+	float: left;
+	margin-left: 3.4482%;
+	width: 13.7931%;
+	display: block;
+}
+#footer3 {
+	clear: none;
+	float: left;
+	margin-left: 3.4482%;
+	width: 65.5172%;
+	display: block;
+}
+#legal {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Slogan {
+	clear: none;
+	float: left;
+	margin-left: 3.4482%;
+	width: 100%;
+	display: block;
+}
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88%;
+	max-width: 1232px;
+	padding-left: 1%;
+	padding-right: 1%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Logo {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 43.1818%;
+	display: block;
+}
+#Navbar {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#imageslider {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#Content1 {
+	clear: none;
+	float: left;
+	margin-left: 13.6363%;
+	width: 20.4545%;
+	display: block;
+}
+#Content2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#content2 {
+	clear: none;
+	float: left;
+	margin-left: 2.2727%;
+	width: 31.8181%;
+	display: block;
+}
+#Content3 {
+	clear: none;
+	float: left;
+	margin-left: 2.2727%;
+	width: 20.4545%;
+	display: block;
+}
+#SecondDiv {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#box1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 31.8181%;
+	display: block;
+}
+#box2 {
+	clear: none;
+	float: left;
+	margin-left: 2.2727%;
+	width: 31.8181%;
+	display: block;
+}
+#box3 {
+	clear: none;
+	float: left;
+	margin-left: 2.2727%;
+	width: 31.8181%;
+	display: block;
+}
+#bottom_div {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#bottomDiv {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#bottomleft {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 31.8181%;
+	display: block;
+}
+#bottomRight {
+	clear: none;
+	float: left;
+	margin-left: 2.2727%;
+	width: 65.909%;
+	display: block;
+}
+#footer1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 20.4545%;
+	display: block;
+}
+#footer2 {
+	clear: none;
+	float: left;
+	margin-left: 2.2727%;
+	width: 20.4545%;
+	display: block;
+}
+#footer3 {
+	clear: none;
+	float: left;
+	margin-left: 2.2727%;
+	width: 54.5454%;
+	display: block;
+}
+#legal {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	font-size: 14px;
+}
+#Slogan {
+	clear: none;
+	float: left;
+	margin-left: 2.2727%;
+	width: 54.5454%;
+	display: block;
+}
+}
