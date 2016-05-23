@@ -51,6 +51,11 @@ body {
 	border-radius: 10px;
 	height: 500px;
 }
+#Navbar {
+	margin-top: 120px;
+	padding: 0px;
+}
+
 #bottomDiv {
 	background-color: #999;
 	margin: 10px;

@@ -176,9 +176,9 @@ img, object, embed, video {
 	display: block;
 }
 #Slogan {
-	clear: none;
+	clear: both;
 	float: left;
-	margin-left: 7.1428%;
+	margin-left: 0;
 	width: 100%;
 	display: block;
 }
@@ -365,10 +365,10 @@ img, object, embed, video {
 	display: block;
 }
 #Navbar {
-	clear: both;
+	clear: none;
 	float: left;
-	margin-left: 0;
-	width: 100%;
+	margin-left: 2.2727%;
+	width: 54.5454%;
 	display: block;
 }
 #imageslider {

@@ -13,23 +13,15 @@
 
 /* Basic Styles */
 body {
-	background-color: #ece8e5;
+
 }
 nav {
 	height: 40px;
 	width: 100%;
-	background: #455868;
 	font-size: 11pt;
-	font-family: 'PT Sans', Arial, sans-serif;
 	font-weight: bold;
 	position: relative;
 	border-bottom: 2px solid #283744;
-}
-nav ul {
-	padding: 0;
-	margin: 0 auto;
-	width: 600px;
-	height: 40px;
 }
 nav li {
 	display: inline;
@@ -54,7 +46,7 @@ nav li:last-child a {
 	border-right: 0;
 }
 nav a:hover, nav a:active {
-	background-color: #8c99a4;
+	background-color: #3399FF;
 }
 nav a#pull {
 	display: none;
@@ -96,10 +88,9 @@ nav a#pull {
 		height: auto;
 	}
 	nav a#pull {
-		display: block;
-		background-color: #283744;
-		width: 100%;
-		position: relative;
+	display: block;
+	width: 100%;
+	position: relative;
 	}
 	nav a#pull:after {
 		content:"";
