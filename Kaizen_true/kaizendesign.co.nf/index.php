@@ -1,4 +1,4 @@
-<?php require_once('../../Connections/Local.php'); ?>
+<?php require_once('../Connections/LocalHost.php'); ?>
 <?php
 if (!function_exists("GetSQLValueString")) {
 function GetSQLValueString($theValue, $theType, $theDefinedValue = "", $theNotDefinedValue = "") 
@@ -42,10 +42,10 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
                        GetSQLValueString($_POST['email'], "text"),
                        GetSQLValueString($_POST['message'], "text"));
 
-  mysql_select_db($database_Local, $Local);
-  $Result1 = mysql_query($insertSQL, $Local) or die(mysql_error());
+  mysql_select_db($database_LocalHost, $LocalHost);
+  $Result1 = mysql_query($insertSQL, $LocalHost) or die(mysql_error());
 
-  $insertGoTo = "www.kaizendesign.co.nf";
+  $insertGoTo = "index.php";
   if (isset($_SERVER['QUERY_STRING'])) {
     $insertGoTo .= (strpos($insertGoTo, '?')) ? "&" : "?";
     $insertGoTo .= $_SERVER['QUERY_STRING'];
@@ -64,10 +64,10 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kaizen Web Design</title>
+<link rel="stylesheet" type="text/css" href="../demo/style.css">
 <link href="../../boilerplate.css" rel="stylesheet" type="text/css">
 <link href="../kaizen.css" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="stylesheet" href="../normalize.css">
-	<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="../../style.css">
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link href="../kaizen-bodystyle.css" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -119,14 +119,14 @@ Do the following if you're using your customized build of modernizr (http://www.
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-<script src="../../respond.min.js"></script>
+<script src="respond.min.js"></script>
 
 </head>
 <body>
 <div class="gridContainer clearfix">
-  <div id="Logo"><a href="#"><img src="../../kaizen_logo.png" alt="Kaizen Design" width="399" height="243"></a></div>
+  <div id="Logo"><a href="#"><img src="kaizen_logo.png" alt="Kaizen Design" width="399" height="243"></a></div>
   <div id="Slogan">
-    <h1>A Personal Approach to Web Design</h1>
+    <h1>A clever tagline goes here!</h1>
   </div>
   <div id="Navbar">	<nav class="clearfix">
 		<ul class="clearfix">
@@ -138,7 +138,7 @@ Do the following if you're using your customized build of modernizr (http://www.
 		</ul>
 		<a href="#" id="pull">Menu</a>
 	</nav></div>
-<div id="imageslider"><img src="../../macbookimg.jpg" alt="Slider" width="1231" height="530"></div>
+<div id="imageslider"><img src="macbookimg.jpg" alt="Slider" width="1231" height="530"></div>
 <div id="SecondDiv">
   <div id="box1"> 
     <h2 class="gridContainer clearfix underline">Who We Are</h2>
@@ -189,11 +189,11 @@ Do the following if you're using your customized build of modernizr (http://www.
   </ul>
 </div>
 <div id="footer3">
-  <h4>Contact Us  </h4>
-  <table width="455" height="294" border="0">
+  <h4>Contact Us</h4>
+  <table width="100%" border="0">
     <tr>
       <td><form action="<?php echo $editFormAction; ?>" method="POST" name="form1" onSubmit="MM_validateForm('email','','RisEmail','message','','R');return document.MM_returnValue">
-        <table width="148%" height="211" border="0">
+        <table width="100%" border="0">
           <tr>
             <td>Name</td>
             <td><label for="name"></label>
@@ -206,21 +206,20 @@ Do the following if you're using your customized build of modernizr (http://www.
           </tr>
           <tr>
             <td>Message</td>
-            <td><textarea name="message" id="message"></textarea></td>
+            <td><label for="message"></label>
+              <textarea name="message" rows="4" id="message"></textarea></td>
           </tr>
           <tr>
             <td>&nbsp;</td>
-            <td><label for="message">
-              <input type="submit" name="button" id="button" value="Submit">
-            </label></td>
+            <td><input type="submit" name="button" id="button" value="Submit"></td>
           </tr>
         </table>
         <input type="hidden" name="MM_insert" value="form1">
       </form></td>
     </tr>
-</table>
-  <p><br>
-  </p>
+  </table>
+  <h4><br>
+  </h4>
 </div>
 <div id="legal">
   <p>Copyright Kaizen Web Design | <a href="#">Privacy Policy</a> | All rights reserved</p>

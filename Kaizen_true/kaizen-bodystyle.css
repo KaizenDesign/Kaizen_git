@@ -17,7 +17,7 @@
 	margin: 15px;
 }
 p {
-	font-family: "MS Serif", "New York", serif;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	padding: 20px;
 	margin: 5px;
 	text-align: justify;
@@ -42,6 +42,10 @@ body {
 	border-radius: 10px;
 	height: 500px;
 }
+.htag {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
 #box3  {
 	background-color: #F90;
 	border-radius: 10px;
